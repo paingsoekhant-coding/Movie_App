@@ -66,10 +66,14 @@
 
                 @if (count($details['videos']['results']) > 0)
 
-                <div class="mt-12">
+                <div class="mt-12 flex ">
 
                     <a href="https://youtube.com/watch?v={{ $details['videos']['results'][0]['key'] }}">
                      <button class="flexitems-center bg-orange-500 text-gray-900 rounded font-semibold px-5 py-4 hover:bg-orange-600 transition ease-in-out duration-150"><i class="fa-solid fa-play me-2"></i>Play Trailer</button>
+                    </a>
+
+                    <a href="{{ route('movie#home') }}" class="hover:text-gray-300 mt-3 md:mt-0">
+                      <button class="ms-4 flex items-center bg-purple-600 text-gray-100 rounded font-semibold px-5 py-4 hover:bg-gray-700 transition ease-in-out duration-150"> Movies</button>
                     </a>
 
                  </div>
